@@ -84,7 +84,7 @@ function getRemaindingTime() {
 
   const time = document.querySelector(".time-left");
   if (days > 0){
-    time.innerHTML = `<p class="time-left">${days} days left until New Year, புத்தாண்டுக்கு ${days} நாட்கள் உள்ளன, අලුත් අවුරුද්ද සඳහා තවත් දින ${days} ඉතිරිව ඇත</p>`
+    time.innerHTML = `<p class="time-left">${days} days left until New Year, புத்தாண்டுக்கு ${days} நாட்கள் உள்ளன, අලුත් අවුරුද්ද සඳහා තවත් දින ${days} ඉතිරිව ඇත</p>`;
   }
 }
 // countdown;
