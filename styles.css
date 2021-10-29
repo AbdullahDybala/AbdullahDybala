@@ -230,3 +230,10 @@ Countdown Timer
   margin-bottom: 0.25rem;
   letter-spacing: var(--spacing);
 }
+
+.high {
+  padding: 5px;
+  background-color: orangered;
+  color: white;
+  border-radius: 20px;
+}

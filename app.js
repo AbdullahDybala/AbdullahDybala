@@ -79,12 +79,23 @@ function getRemaindingTime() {
 
   if (t < 0) {
     clearInterval(countdown);
-    deadline.innerHTML = `<h4 class="expired">Happy New Year</h4>`;
+    deadline.innerHTML = `<h1 class="expired">Happy New Year</h1>`;
   }
 
   const time = document.querySelector(".time-left");
   if (days > 0){
-    time.innerHTML = `<p class="time-left">${days} days left until New Year, புத்தாண்டுக்கு ${days} நாட்கள் உள்ளன, අලුත් අවුරුද්ද සඳහා තවත් දින ${days} ඉතිරිව ඇත</p>`;
+    time.innerHTML = `<p class="time-left"><span class="high">${days}</span> days left until New Year, புத்தாண்டுக்கு <span class="high">${days}</span> நாட்கள் உள்ளன, අලුත් අවුරුද්ද සඳහා තවත් දින <span class="high">${days}</span> ඉතිරිව ඇත</p>`;
+  }
+  else {
+    time.innerHTML = `<p>
+    Wish You A Very Happy New Year By Abdullah. Thanks For Visiting My Website. Check Me Out In <a href="https://instagram.com/abdullah_dybala_/" target="_blank">Instagram</a> & <a href="https://www.facebook.com/profile.php?id=100071801450008" target="_blank">Facebook</a> For More Info. Stay Home, Stay Safe.
+  </p>
+  <p>
+    அப்துல்லாவின் இனிய புத்தாண்டு வாழ்த்துக்கள். எனது வலைத்தளத்தைப் பார்வையிட்டதற்கு நன்றி. மேலும் தகவலுக்கு <a href="https://instagram.com/abdullah_dybala_/" target="_blank">இன்ஸ்டாகிராம்</a> மற்றும் <a href="https://www.facebook.com/profile.php?id=100071801450008" target="_blank">பேஸ்புக்கில்</a> என்னைப் பார்க்கவும். வீட்டிலேயே இருங்கள், பாதுகாப்பாக இருங்கள்
+  </p>
+  <p>
+    අබ්දුල්ලා විසින් ඔබට සුභ නව වසරක් පතමි. මගේ වෙබ් අඩවියට පිවිසීම ගැන ස්තුතියි. වැඩි විස්තර සඳහා <a href="https://instagram.com/abdullah_dybala_/" target="_blank">Instagram</a> සහ <a href="https://www.facebook.com/profile.php?id=100071801450008" target="_blank">Facebook</a> හි මාව පරීක්‍ෂා කරන්න. නිවසේ රැඳී සිටින්න, ආරක්ෂිතව සිටින්න
+  </p>`
   }
 }
 // countdown;
