@@ -49,5 +49,33 @@
       <h4 style="margin: 50px;">proudly presented by Abdullah</h4>
     </section>
     <script src="app.js"></script>
+    <script>
+      function showNotification() {
+        const notification = new Notification("New Message From Abdullah!", {
+          body: "Update Have Been To Our New Website Pls Visit Us Soon, Welcome Back to My Website"
+        });
+
+        notification.onclick = (e) => {
+          window.location.href = "https://abdullahdybala.github.io/Clock.com/"
+        }
+      }
+      function showNotificationOne() {
+        const notification = new Notification("New Message From Abdullah!", {
+          body: "Thanks For Joining Us"
+        });
+      }
+
+      console.log(Notification.permission);
+
+      if (Notification.permission === "granted") {
+          showNotification();
+      } else if (Notification.permission !== "denied") {
+          Notification.requestPermission().then(permission => {
+              if (permission === "granted") {
+                  showNotificationOne();
+              }
+          });
+      }
+  </script>
   </body>
 </html>
