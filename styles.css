@@ -9,11 +9,8 @@
 }
 body {
   font-family: "Open Sans", sans-serif;
-  background: url(./img4.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: white;
+  background: white;
+  color: #333;
   line-height: 1.5;
   font-size: 0.875rem;
 }
@@ -58,7 +55,7 @@ h4 {
 }
 p {
   margin-bottom: 1.25rem;
-  color: white;
+  color: #333;
 }
 @media screen and (min-width: 800px) {
   h1 {
@@ -103,10 +100,10 @@ main {
   color: #222;
 }
 .gift-info p {
-  color: white;
+  color: #333;
 }
 .date {
-  color: white;
+  color: blue;
   font-size: 0.85rem;
 }
 @media screen and (min-width: 992px) {
@@ -128,7 +125,7 @@ main {
   display: flex;
 }
 .deadline-format {
-  background-image: linear-gradient(-225deg, #231557 0%, #44107A 29%, #FF1361 67%, #FFF800 100%);
+  background: linear-gradient(-225deg, #231557 0%, #44107A 29%, #FF1361 67%, #FFF800 100%);
   color: white;
   margin-right: 1rem;
   width: 5rem;
@@ -152,7 +149,17 @@ main {
 
 .high {
   padding: 5px;
-  background-image: linear-gradient(-225deg, #77FFD2 0%, #6297DB 48%, #1EECFF 100%);
   color: white;
   border-radius: 50%;
+  font-size: 24px;
+  font-weight: 500;
+  animation: Cchange 1s linear infinite;
+}
+
+@keyframes Cchange {
+  from{
+    color: crimson;
+  } to {
+    color: cornflowerblue;
+  }
 }
