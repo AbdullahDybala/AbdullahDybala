@@ -30,7 +30,7 @@ let tempYear = tempDate.getFullYear();
 let tempMonth = tempDate.getMonth();
 let tempDay = tempDate.getDate();
 // months are ZERO index based;
-const futureDate = new Date(/*tempYear, tempMonth, tempDay + */2022, 0, 1, 12, 0, 0);
+const futureDate = new Date(/*tempYear, tempMonth, tempDay + */2021, 11, 31, 24, 0, 0);
 
 // let futureDate = new Date(2020, 3, 24, 11, 30, 0);
 
@@ -85,6 +85,10 @@ function getRemaindingTime() {
   const time = document.querySelector(".time-left");
   if (days > 0){
     time.innerHTML = `<p class="time-left"><span class="high">${days}</span> days left until New Year, புத்தாண்டுக்கு <span class="high">${days}</span> நாட்கள் உள்ளன, අලුත් අවුරුද්ද සඳහා තවත් දින <span class="high">${days}</span> ඉතිරිව ඇත</p>`;
+  } else if (hours > 0){
+    time.innerHTML = `<p class="time-left"><span class="high">${days}</span> hours left until New Year, புத்தாண்டுக்கு <span class="high">${days}</span> மணிநேரம் உள்ளது, අලුත් අවුරුද්ද සඳහා තවත් පැය <span class="high">${days}</span> ඉතිරිව ඇත</p>`;
+  } else if (minutes > 0){
+    time.innerHTML = `<p class="time-left"><span class="high">${days}</span> minutes left until New Year, புத்தாண்டுக்கு <span class="high">${days}</span> நிமிடங்கள் உள்ளது, අලුත් අවුරුද්ද සඳහා තවත් මිනිත්තු <span class="high">${days}</span> ඉතිරිව ඇත</p>`;
   }
   else {
     time.innerHTML = `<p>
