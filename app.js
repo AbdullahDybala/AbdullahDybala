@@ -86,11 +86,12 @@ function getRemaindingTime() {
   if (days > 0){
     time.innerHTML = `<p class="time-left"><span class="high">${days}</span> days left until New Year, புத்தாண்டுக்கு <span class="high">${days}</span> நாட்கள் உள்ளன, අලුත් අවුරුද්ද සඳහා තවත් දින <span class="high">${days}</span> ඉතිරිව ඇත</p>`;
   } else if (hours > 0){
-    time.innerHTML = `<p class="time-left"><span class="high">${days}</span> hours left until New Year, புத்தாண்டுக்கு <span class="high">${days}</span> மணிநேரம் உள்ளது, අලුත් අවුරුද්ද සඳහා තවත් පැය <span class="high">${days}</span> ඉතිරිව ඇත</p>`;
+    time.innerHTML = `<p class="time-left"><span class="high">${hours}</span> hours left until New Year, புத்தாண்டுக்கு <span class="high">${hours}</span> மணிநேரம் உள்ளது, අලුත් අවුරුද්ද සඳහා තවත් පැය <span class="high">${hours}</span> ඉතිරිව ඇත</p>`;
   } else if (minutes > 0){
-    time.innerHTML = `<p class="time-left"><span class="high">${days}</span> minutes left until New Year, புத்தாண்டுக்கு <span class="high">${days}</span> நிமிடங்கள் உள்ளது, අලුත් අවුරුද්ද සඳහා තවත් මිනිත්තු <span class="high">${days}</span> ඉතිරිව ඇත</p>`;
-  }
-  else {
+    time.innerHTML = `<p class="time-left"><span class="high">${minutes}</span> minutes left until New Year, புத்தாண்டுக்கு <span class="high">${minutes}</span> நிமிடங்கள் உள்ளது, අලුත් අවුරුද්ද සඳහා තවත් මිනිත්තු <span class="high">${minutes}</span> ඉතිරිව ඇත</p>`;
+  } else if (seconds > 0){
+    time.innerHTML = `<p class="time-left"><span class="high">${seconds}</span> minutes left until New Year, புத்தாண்டுக்கு <span class="high">${seconds}</span> நிமிடங்கள் உள்ளது, අලුත් අවුරුද්ද සඳහා තවත් මිනිත්තු <span class="high">${seconds}</span> ඉතිරිව ඇත</p>`;
+  } else {
     time.innerHTML = `<p>
     Wish You A Very Happy New Year By Abdullah. Thanks For Visiting My Website. Check Me Out In <a href="https://instagram.com/abdullah_dybala_/" target="_blank">Instagram</a> & <a href="https://www.facebook.com/profile.php?id=100071801450008" target="_blank">Facebook</a> For More Info. Stay Home, Stay Safe.
   </p>
